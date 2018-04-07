@@ -1,33 +1,45 @@
 @charset 'UTF-8';
 /* Body */
 html {
-    position: relative;
+    /*position: relative;*/
     min-width: 1024px;
     min-height: 768px;
     height: 100%;
+    width: 100%;
+    margin: 0px;
+    overflow: hidden;
+    /*height: 100vh;*/
 }
 body {
 	font-family: source-sans-pro;
 	background-color: #f2f2f2;
-	margin-top: 0px;
-	margin-right: 0px;
-	margin-bottom: 0px;
-	margin-left: 0px;
+	margin:0px;
 	font-style: normal;
 	font-weight: 200;
+	height: 100vh;!important
+	overflow: hidden;
+
+
 }
 /* Container */
 .container {
     width: 100%;
     margin-left: auto;
     margin-right: auto;
-    height: 100%;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    height: 100vh;
     background-color: #FFFFFF;
+    position: fixed;
+    overflow: hidden;
+
 }
 /* Navigation */
 header {
-    width: 100%;
-    height: 7%;
+    /*width: 100%;*/
+    /*height: 7%;*/
     background: #E4F1FE;
 }
 nav {
@@ -60,19 +72,19 @@ ul li:hover a {
 .hero_header {
     color: #050505;
     text-align: center;
-    margin-right: 200px;
-    margin-bottom: 200px;
-    margin-left: 200px;
+    margin-bottom: 50px;
     letter-spacing: 4px;
     font-family: "Roboto", sans-serif;
     font-size: 64pt;
     margin-top: 0px;
+    padding-top: 30px;
 }
 /* Hero Section */
 .hero {
     background-color: #E4F1FE;
-    padding-top: 150px;
-    padding-bottom: 150px;
+    /*padding-top: 8%;*/
+    padding-bottom:30%;
+    /*margin-bottom: 0px;*/
     text-align: center;
 }
 /*#hero .language #Eng, .language #Espanol {*/
@@ -93,8 +105,9 @@ text-shadow:   none;*/
   /*display: inline-block; !important*/
   /*width: 30%;*/
   text-align: center;
-  margin-left: 2%;
-  margin-bottom: 15%;
+  padding-top: 5%;
+  /*margin-left: 2%;*/
+  /*margin-bottom: 10%;*/
 }
 .btn{
   display: inline-block; !important
@@ -135,10 +148,10 @@ text-shadow:   none;*/
 }
 
 .esp:hover{
-  background: #78909c;
+  background: #32CD32;
 }
 .eng:hover{
-  background: #78909c;
+  background: #32CD32;
 }
 
 
@@ -159,7 +172,7 @@ text-shadow:   none;*/
 /* More info */
 footer {
 	background-color: #FFFFFF;
-	padding-bottom: 35px;
+	padding-bottom: 25px;
 }
 .footer_column {
 	width: 50%;
@@ -202,6 +215,9 @@ footer .footer_column p {
     text-transform: uppercase;
     font-weight: lighter;
     letter-spacing: 2px;
+    bottom: 0px;
+    position: fixed;
+    width:100%;
 }
 .footer_banner {
 	background-color: #B3B3B3;

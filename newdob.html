@@ -8,11 +8,13 @@
 <link href="css/confirm.css" rel="stylesheet" type="text/css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <!-- <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet"> -->
+
 <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.9/jquery.min.js"></script> -->
 <script src="jquery-3.3.1.min.js"></script>
 <!-- <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script> -->
 <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
 <script src="https://code.jquery.com/jquery-migrate-3.0.1.js"></script>
+
 </head>
 <body>
 <!-- Main Container
@@ -25,20 +27,18 @@
   <!-- Hero Section -->
   <section class="hero" id="hero">
   	<div id = "div1">
-    	<h2 id="hero_header" class="hero_header">Please enter your phone number</h2>
+    	<h2 id="hero_header" class="hero_header">Please enter your date of birth</h2>
     </div>
     <div class = "confirm_method" id = "target">
-    	<form id = "phone_check">
+    	<form id = "date_check">
         <!-- <input id="phonenum" type="tel" pattern="^\d{3}-\d{3}-\d{4}$" required placeholder="123-123-1234" > -->
-        <label for="break">(</label>
-        <input id="tel1" class="inputs" type="tel" maxlength="3" placeholder="123" >
-        <label for="break">)</label>
-        <input id="tel2" class="inputs" type="tel" maxlength="3" placeholder="123">
-        <label for="break">-</label>
-        <input id="tel3" class="inputs"  type="tel" maxlength="4" placeholder="1234">
-       
+        <select id="dobmonth" class="1-12"></select>
+        <label for="break">/</label>
+        <select id="dobdate" class="1-31"></select>  
+        <label for="break">/</label>
+        <select id="dobyear" class="1900-2018"></select> 
       </form>
-      <div class="float_right"><button onclick = "myfunction()" class="btn next" id ="next" ><i class="fa fa-arrow-right" style="font-size:64px"></i></button></div>
+      <div class="float_right"><button onclick = "location.href = 'confirm_dob.html'" class="btn next" id ="next" ><i class="fa fa-arrow-right" style="font-size:64px"></i></button></div>
 
       <!-- <button type = "submit" class="btn next" id = "next"><i class="fa fa-arrow-right"></i></button> -->
 	   
@@ -53,9 +53,9 @@
   <!-- More Info Section -->
   <!-- Footer Section -->
   <!-- Copyrights Section -->
-  <div class="copyright">&copy;2018 -HEALTH iNFORMATICS VIP @ GT</div>
+  <div class="copyright">&copy;2018 -HEALTH INFORMATICS VIP @ GT</div>
 </div>
 <!-- Main Container Ends -->
-<script type="text/javascript" src="scripts/trans1.js"></script>
+<script type="text/javascript" src="scripts/trans1.js" ></script> 
 </body>
 </html>
