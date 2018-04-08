@@ -8,47 +8,30 @@
     <title>VIP</title>
 
     <link href="css/confirm.css" rel="stylesheet" type="text/css">
-    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
 
     <script src="scripts/trans1.js" type="text/javascript"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
     <script src="https://code.jquery.com/jquery-migrate-3.0.1.js"></script>
-    <script>
-    	// var b2 = document.getElementById('phone_check');
-    	// window.onload = pre_loader;
-    	// function pre_loader() {
-
-     //    document.getElementById('div2').style.display='none';
-    	// }
-    	// var button = document.getElementById('Phone')
-     //    button.addEventListener('click',hideshow,false);
-     //    function hideshow() {
-     //        document.getElementById('').style.display = 'block';
-     //        this.style.display = 'none'
-     //    }
-    </script>
-    <!-- <script>
-    	function change_div() {
-    		document.getElementById('div1').style.display = 'none';
-    		document.getElementById('div2').style.display = 'block';
-    	}
-    </script> -->
 </head>
 <body>
+<!-- Main Container -->
+<div class="container">
     <!-- Navigation -->
     <div class="header">
-		<img src="images/GradyEmergencyLogo.png" width="30%" height="30%" right="0" alt=""/>
-		<div class="float_right">
+        <img src="images/GradyEmergencyLogo.png" width="30%" height="30%" right="0" alt=""/>
+        <div class="float_right">
             <button onclick="location.href='are_you_sure.html'" href="#" class="btn Exit" id="Exit">Exit</button>
         </div>
     </div>
+
     <!-- Hero Section -->
     <section class="hero" id="hero">
-        <h2 id="hero_header" class="hero_header">How would you like to confirm your identity?</h2>
+        <div id="div1">
+            <h2 id="hero_header" class="hero_header">Are you sure you want to leave your session?</h2>
         <div class="confirm_method" id="target">
-    	   <button onclick="location.href='ret_phone.html'" href="#" class="btn Phone" id="Phone">Phone Number</button>
-    	   <button onclick="location.href='ret_dob.html'" href="#" class="btn dob" id="DOB">Date of Birth</button>
+            <button  href="#" class="btn " id="No">No</button>
+            <button onclick="location.href='select_language.html'" class="btn dob" id="Yes">Yes</button>
         </div>
     </section>
 
@@ -56,6 +39,7 @@
     <!-- Stats Gallery Section -->
     <!-- Parallax Section -->
     <!-- More Info Section -->
+    <!-- <footer> </footer> -->
     <!-- Footer Section -->
     <!-- Copyrights Section -->
     <div class="copyright">&copy; 2018 GT VIP HEALTH INFORMATICS</div>

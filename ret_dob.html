@@ -4,12 +4,13 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    
+
     <title>VIP</title>
-    
+
     <link href="css/confirm.css" rel="stylesheet" type="text/css">
-    
+
     <script src="scripts/trans1.js" type="text/javascript"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
     <script src="https://code.jquery.com/jquery-migrate-3.0.1.js"></script>
@@ -30,13 +31,13 @@
     </script>
 </head>
 <body>
-<<<<<<< HEAD
+
 <!-- Main Container -->
 <div class="container">
   <!-- Navigation -->
   <strong>
   <header><img src="images/GradyEmergencyLogo.png" width="30%" height="30%" alt=""/>
-  <button onclick = "location.href = 'Homepage.html'" href="#" class = "btn Exit" id = "Exit">Exit</button>
+  <button onclick = "location.href = 'select_language.html'" href="#" class = "btn Exit" id = "Exit">Exit</button>
   </header>
   </strong>
   <!-- Hero Section -->
@@ -48,31 +49,12 @@
         <input id="month" type="tel" pattern="^\d{2}" placeholder="MM" required >
         <input id="day" type="tel" pattern="^\d{2}$" placeholder="DD"required >
         <input id="year" type="tel" pattern="^\d{4}$" placeholder="YYYY" required >
-        <input type="submit" value="Submit">
       </form>
+      <div class="float_right">
+          <button onclick="location.href='ret_confirm_dob.html'" class="btn next" id ="next" >
+            <i class="fa fa-arrow-right" style="font-size:64px"></i></button>
+      </div>
 	</div>
-=======
-    <!-- Navigation -->
-    <div class="header">
-        <img src="images/GradyEmergencyLogo.png" width="30%" height="30%" right="0" alt=""/>
-        <div class="float_right">
-            <button onclick="location.href='select_language.html'" href="#" class="btn Exit" id="Exit">Exit</button>
-        </div>
-    </div>
->>>>>>> 88fd64517a2b9c4c02cd553ec90979a8e4fcd3bb
-
-    <!-- Hero Section -->
-    <section class="hero" id="hero">
-        <h2 id="hero_header" class="hero_header">Please enter your Date of Birth</h2>
-        <div class = "confirm_method" id = "target">
-            <form id = "birth_check">
-            <input id="month" type="tel" pattern="^\d{2}" placeholder="MM" required >
-            <input id="day" type="tel" pattern="^\d{2}$" placeholder="DD"required >
-            <input id="year" type="tel" pattern="^\d{4}$" placeholder="YYYY" required >
-            <input type="submit" value="Submit">
-            </form>
-        </div>
-    </section>
 
     <!-- About Section -->
     <!-- Stats Gallery Section -->
