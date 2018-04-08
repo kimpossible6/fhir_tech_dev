@@ -1,49 +1,52 @@
 <!DOCTYPE html>
 <html lang="en-US">
 <head>
-    <title>VIP</title>
-
     <meta charset="utf-8">
     <!-- <meta http-equiv="X-UA-Compatible" content="IE=edge"> -->
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
+    <title>VIP</title>
+    
     <link href="css/confirm.css" rel="stylesheet" type="text/css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <!-- <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet"> -->
-
+    
+    <script src="scripts/trans1.js" type="text/javascript"></script> 
     <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.9/jquery.min.js"></script> -->
     <script src="jquery-3.3.1.min.js"></script>
     <!-- <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script> -->
     <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
     <script src="https://code.jquery.com/jquery-migrate-3.0.1.js"></script>
+    <script>
+    // $(".inputs").keyup(function() {
+    //        if (this.value.length == this.maxLength) {
+    //          var $next = $(this).next('.inputs');
+    //          if ($next.length)
+    //              $(this).next('.inputs').focus();
+    //          else
+    //              $(this).blur();
+    //        }
+    // });
+    </script>
 </head>
 <body>
     <!-- Navigation -->
     <div class="header">
         <img src="images/GradyEmergencyLogo.png" width="30%" height="30%" right="0" alt=""/>
         <div class="float_right">
-            <button onclick="location.href='Homepage.html'" href="#" class="btn Exit" id="Exit">Exit</button>
+            <button onclick="location.href='select_language.html'" href="#" class="btn Exit" id="Exit">Exit</button>
         </div>
     </div>
 
     <!-- Hero Section -->
     <section class="hero" id="hero">
-        <div id="div1">
-            <h2 id="hero_header" class="hero_header">Please enter your date of birth</h2>
+    	<div id="div1">
+            <h2 id="hero_header" class="hero_header">Please confirm your date of birth</h2>
         </div>
         <div class="confirm_method" id="target">
-            <form id="date_check">
-                <!-- <input id="phonenum" type="tel" pattern="^\d{3}-\d{3}-\d{4}$" required placeholder="123-123-1234" > -->
-                <select id="dobmonth" class="1-12"></select>
-                <label for="break">/</label>
-                <select id="dobdate" class="1-31"></select>
-                <label for="break">/</label>
-                <select id="dobyear" class="1900-2018"></select>
-            </form>
-            <div class="float_right">
-                <button onclick="location.href='confirm_dob.html'" class="btn next" id ="next" ><i class="fa fa-arrow-right" style="font-size:64px"></i></button>
-            </div>
             <!-- <button type="submit" class="btn next" id="next"><i class="fa fa-arrow-right"></i></button> -->
+            <button onclick="location.href='new_dob.html'" href="#" class="btn no" id="No">NO</button>
+            <button onclick="location.href='new_address.html'" class="btn yes" id="Yes">YES</button>
         </div>
     </section>
 
@@ -54,7 +57,5 @@
     <!-- Footer Section -->
     <!-- Copyrights Section -->
     <div class="copyright">&copy; 2018 GT VIP HEALTH INFORMATICS</div>
-
-    <script type="text/javascript" src="scripts/trans1.js" ></script>
 </body>
 </html>
