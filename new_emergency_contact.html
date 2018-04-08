@@ -8,13 +8,12 @@
 <link href="css/confirm.css" rel="stylesheet" type="text/css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <!-- <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet"> -->
-
+<script type="text/javascript" src="scripts/trans1.js" ></script>
 <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.9/jquery.min.js"></script> -->
 <script src="jquery-3.3.1.min.js"></script>
 <!-- <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script> -->
 <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
 <script src="https://code.jquery.com/jquery-migrate-3.0.1.js"></script>
-
 </head>
 <body>
 <!-- Main Container
@@ -27,23 +26,32 @@
   <!-- Hero Section -->
   <section class="hero" id="hero">
   	<div id = "div1">
-    	<h2 id="hero_header" class="hero_header">Please enter your date of birth</h2>
+    	<h2 id="hero_header" class="hero_header" >Please enter your emergency contact info</h2>
     </div>
     <div class = "confirm_method" id = "target">
-    	<form id = "date_check">
-        <!-- <input id="phonenum" type="tel" pattern="^\d{3}-\d{3}-\d{4}$" required placeholder="123-123-1234" > -->
-        <select id="dobmonth" class="1-12"></select>
-        <label for="break">/</label>
-        <select id="dobdate" class="1-31"></select>
-        <label for="break">/</label>
-        <select id="dobyear" class="1900-2018"></select>
-      </form>
-      <div class="float_right"><button onclick = "location.href = 'confirm_dob.html'" class="btn next" id ="next" >
-        <i class="fa fa-arrow-right" style="font-size:64px"></i></button></div>
+    	<form id = "name_check">
+        <div class = "sameline1"><label for="annotation">Name:</label>
+        <input class="inputs" type="text" placeholder="First" >
+        <input class="inputs" type="text" placeholder="Last" >
+        <div class = "sameline1"><label for="annotation">Street Address:</label>
+        <input class="inputs" type="text" placeholder="123 Anon Street" >
+        <label for="annotation">City:</label>
+        <input class="inputs" type="text" placeholder="Anytown"></div>
+        <div class = "sameline3"><label for="annotation">State:</label>
+        <input class="inputs" type="text" pattern="[A-Z]{2}$" placeholder="GA">
+        <label for="annotation">Zip Code:</label>
+        <input class="inputs" type="text" pattern="^\d{35}" placeholder="45678"></div>
+        <div class = "sameline3"><label for="annotation">Country:</label>
+        <input class="inputs" type="text" placeholder="Country">
+        <label for="annotation">Relationship:</label>
+        <input class="inputs" type="text" placeholder="ie Mother">
 
+      </form>
       <!-- <button type = "submit" class="btn next" id = "next"><i class="fa fa-arrow-right"></i></button> -->
 
   </div>
+  <div class="float_right"><button onclick = "location.href = 'confirm_emer_contact.html'" class="btn next" id ="next" >
+    <i class="fa fa-arrow-right" style="font-size:64px"></i></button></div>
 
 
 
