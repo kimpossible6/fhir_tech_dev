@@ -6,7 +6,7 @@ $(".inputs").keyup(function () {
      $(this).nextAll('.inputs:enabled:first').focus();
    }
 });
-
+// drop down range
 $(function(){
     var $select = $(".1-12");
     var $select2 = $(".1-31");
