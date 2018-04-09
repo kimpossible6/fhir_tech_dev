@@ -6,7 +6,7 @@ $(".inputs").keyup(function () {
      $(this).nextAll('.inputs:enabled:first').focus();
    }
 });
-// drop down range
+
 $(function(){
     var $select = $(".1-12");
     var $select2 = $(".1-31");
@@ -27,12 +27,22 @@ var input1=123;
 var input2=123;
 var input3=1234;
 function myfunction() {
-	input1 = document.getElementById("tel1").innerHTML;
-    input2 = document.getElementById("tel2").innerHTML;
-    input3 = document.getElementById("tel3").innerHTML;
-    window.location.href = 'confirm_phone.html';
+    document.getElementById("next").onclick = function() {
+        location.href = 'confirm_phone.html';
+        input1 = document.getElementById("tel1").value;
+        input2 = document.getElementById("tel2").value;
+        input3 = document.getElementById("tel3").value;
+    }
     return [input1,input2,input3];
 }
+
+
+
+// var myBtn = document.getElementById('next');
+// myBtn.addEventListener('click', function(event) {
+//     window.location.href='confirm_phone.html';
+//   });
+
 
 // function getphone() {
 // 	var code = new myfunction();
