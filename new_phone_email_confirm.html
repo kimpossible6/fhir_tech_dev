@@ -6,7 +6,6 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>VIP</title>
 <link href="css/confirm.css" rel="stylesheet" type="text/css">
-<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
 <script src="scripts/trans1.js" type="text/javascript"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
@@ -22,35 +21,28 @@
  //    button.addEventListener('click',hideshow,false);
 
  //    function hideshow() {
- //        document.getElementById('').style.display = 'block'; 
+ //        document.getElementById('').style.display = 'block';
  //        this.style.display = 'none'
- //    }   
+ //    }
 </script>
-<!-- <script>
-	function change_div() {
-		document.getElementById('div1').style.display = 'none';
-		document.getElementById('div2').style.display = 'block';
-	}
-</script> -->
 <body>
 <!-- Main Container -->
-<div class="container"> 
+<div class="container">
   <!-- Navigation -->
-  <!-- <div id = "div2"> -->
-  <div class="header">
-  		<img src="images/GradyEmergencyLogo.png" width="30%" height="30%" right="0" alt=""/>
-  		<div class="float_right"><button onclick = "location.href = 'Homepage.html'" href="#" class = "btn Exit" id = "Exit">Exit</button></div>
-  </div>
-  <!-- </div> -->
-   <!-- Hero Section -->
+  <strong>
+  <header><img src="images/GradyEmergencyLogo.png" width="30%" height="30%" alt=""/>
+    <button onclick = "location.href = 'select_language.html'" href="#" class = "btn Exit" id = "Exit">Exit</button>
+  </header>
+  </strong>
+  <!-- Hero Section -->
   <section class="hero" id="hero">
-    
   	<div id = "div1">
-    	<h2 id="hero_header" class="hero_header">How would you like to confirm your identity?</h2>
+    	<h2 id="hero_header" class="hero_header">Please confirm your phone number</h2>
+      <h2 id="hero_header" class="hero_header">Please confirm your email</h2>
     <div class = "confirm_method" id = "target">
-    	<button onclick = "location.href = 'phone_check.html'" href="#" class = "btn Phone" id = "Phone">Phone Number</button>
-    	<button class = "btn dob" id = "DOB">Date of Birth</button>
-	</div>
+        <button onclick = "location.href = 'new_phone_email.html'" href="#" class = "btn " id = "No">No</button>
+        <button onclick = "location.href = 'new_emergency_contact.html'" class = "btn dob" id = "Yes">Yes</button><!--onclick = "location.href = ''"-->
+    </div>
 
 
   </section>
@@ -58,6 +50,7 @@
   <!-- Stats Gallery Section -->
   <!-- Parallax Section -->
   <!-- More Info Section -->
+  <!-- <footer> </footer> -->
   <!-- Footer Section -->
   <!-- Copyrights Section -->
   <div class="copyright">&copy;2018 -HEALTH iNFORMATICS VIP @ GT</div>

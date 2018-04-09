@@ -8,7 +8,7 @@
 <link href="css/confirm.css" rel="stylesheet" type="text/css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <!-- <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet"> -->
-<script type="text/javascript" src="scripts/trans1.js" ></script> 
+<script type="text/javascript" src="scripts/trans1.js" ></script>
 <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.9/jquery.min.js"></script> -->
 <script src="jquery-3.3.1.min.js"></script>
 <!-- <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script> -->
@@ -17,40 +17,43 @@
 </head>
 <body>
 <!-- Main Container
-<div class="container"> 
+<div class="container">
   <!-- Navigation -->
   <div class="header">
       <img src="images/GradyEmergencyLogo.png" width="30%" height="30%" right="0" alt=""/>
-      <div class="float_right"><button onclick = "location.href = 'Homepage.html'" href="#" class = "btn Exit" id = "Exit">Exit</button></div>
+      <div class="float_right"><button onclick = "location.href = 'select_language.html'" href="#" class = "btn Exit" id = "Exit">Exit</button></div>
   </div>
   <!-- Hero Section -->
   <section class="hero" id="hero">
   	<div id = "div1">
-    	<h2 id="hero_header" class="hero_header">Please enter your address</h2>
+    	<h2 id="hero_header" class="hero_header" >Please enter your emergency contact info</h2>
     </div>
     <div class = "confirm_method" id = "target">
     	<form id = "name_check">
-        <!-- <input id="phonenum" type="tel" pattern="^\d{3}-\d{3}-\d{4}$" required placeholder="123-123-1234" > -->
+        <div class = "sameline1"><label for="annotation">Name:</label>
+        <input class="inputs" type="text" placeholder="First" >
+        <input class="inputs" type="text" placeholder="Last" >
         <div class = "sameline1"><label for="annotation">Street Address:</label>
-        <input class="inputs" type="text" placeholder="Street Address" >
+        <input class="inputs" type="text" placeholder="123 Anon Street" >
         <label for="annotation">City:</label>
-        <input class="inputs" type="text" placeholder="City"></div>
+        <input class="inputs" type="text" placeholder="Anytown"></div>
         <div class = "sameline3"><label for="annotation">State:</label>
-        <input class="inputs" type="text" placeholder="State">
+        <input class="inputs" type="text" pattern="[A-Z]{2}$" placeholder="GA">
         <label for="annotation">Zip Code:</label>
-        <input class="inputs" type="text" placeholder="Zip Code"></div>
-        <div class = "sameline5"><label for="annotation">Country:</label>
+        <input class="inputs" type="text" pattern="^\d{35}" placeholder="45678"></div>
+        <div class = "sameline3"><label for="annotation">Country:</label>
         <input class="inputs" type="text" placeholder="Country">
-        <input type="button" id="button" value="I don't have permanent address"; data-count="1"/></div>
-       
+        <label for="annotation">Relationship:</label>
+        <input class="inputs" type="text" placeholder="ie Mother">
+
       </form>
-      <div class="float_right"><button onclick = "location.href = 'confirm_address.html'" class="btn next" id ="next" ><i class="fa fa-arrow-right" style="font-size:64px"></i></button></div>
-
       <!-- <button type = "submit" class="btn next" id = "next"><i class="fa fa-arrow-right"></i></button> -->
-	   
-  </div>
 
-		
+  </div>
+  <div class="float_right"><button onclick = "location.href = 'confirm_emer_contact.html'" class="btn next" id ="next" >
+    <i class="fa fa-arrow-right" style="font-size:64px"></i></button></div>
+
+
 
   </section>
   <!-- About Section -->
@@ -62,6 +65,6 @@
   <div class="copyright">&copy;2018 -HEALTH INFORMATICS VIP @ GT</div>
 </div>
 <!-- Main Container Ends -->
-<script type="text/javascript" src="scripts/trans1.js" ></script> 
+<script type="text/javascript" src="scripts/trans1.js" ></script>
 </body>
 </html>

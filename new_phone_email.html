@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en-US">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>VIP</title>
+<link href="css/confirm.css" rel="stylesheet" type="text/css">
+<script src="scripts/trans1.js" type="text/javascript"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+<script src="https://code.jquery.com/jquery-migrate-3.0.1.js"></script>
+
+<body>
+<!-- Main Container -->
+<div class="container">
+  <!-- Navigation -->
+  <strong>
+  <header>
+    <img src="images/GradyEmergencyLogo.png" width="30%" height="30%" alt=""/>
+    <button onclick = "location.href = 'select_language.html'" href="#" class = "btn Exit" id = "Exit">Exit</button>
+  </header>
+  </strong>
+
+  <!-- Hero Section -->
+  <section class="hero" id="hero">
+    <div id = "div1">
+      <h2 id="hero_header" class="hero_header">Please enter your phone number and email.</h2>
+    <div class = "confirm_method" id = "target">
+      <form id = "phone_check">
+        <div class = "sameline1">
+        <input id="phonenum" type="tel" pattern="^\d{3}-\d{3}-\d{4}$" placeholder="###-###-####" required >
+        <input id="ssn3" type="tel" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$" placeholder="email" required >
+        <div class = "sameline2">
+        <input type="button" id="button" value="I don't have a phone number"; data-count="1"/>
+        <input type="button" id="button" value="I don't have an email"; data-count="1"/></div>
+      </form>
+  	</div>
+    <div class="float_right"><button onclick = "location.href = 'new_phone_email_confirm.html'" class="btn next" id ="next" >
+      <i class="fa fa-arrow-right" style="font-size:64px"></i></button></div>
+  </section>
+  <!-- About Section -->
+  <!-- Stats Gallery Section -->
+  <!-- Parallax Section -->
+  <!-- More Info Section -->
+  <footer> </footer>
+  <!-- Footer Section -->
+  <!-- Copyrights Section -->
+  <div class="copyright">&copy;2018 -HEALTH iNFORMATICS VIP @ GT</div>
+</div>
+<!-- Main Container Ends -->
+</body>
+</html>

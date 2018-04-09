@@ -149,6 +149,10 @@ ul li:hover a {
   /*left:0;*/
 }
 
+#Exit{
+  float: right;
+}
+
 #Phone:hover{
   background: #32CD32;
 }
@@ -219,7 +223,7 @@ input[type=tel], select {
     border: 1px solid #ccc;
     border-radius: 4px;
     box-sizing: border-box;
-    
+
 }
 /*select {
 	font-size: 50px;
