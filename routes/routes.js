@@ -5,5 +5,6 @@ module.exports = function(app) {
 	app.post('/language', index.savelanguage);
 	app.get('/not_recognized', index.notrecognized);
 	app.get('/new_name', index.newname);
+	app.post('/new_name', index.savename);
 	
 };

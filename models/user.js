@@ -5,6 +5,7 @@ exports.userSchema = function() {
         lastname: '',
         firstname: '',
         middlename: '',
+        suffix: '',
         ssn:'',
         id: '',
         medications: {},
