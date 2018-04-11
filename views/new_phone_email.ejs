@@ -5,8 +5,8 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>VIP</title>
-<link href="css/confirm.css" rel="stylesheet" type="text/css">
-<script src="scripts/trans1.js" type="text/javascript"></script>
+<link href="public/css/confirm.css" rel="stylesheet" type="text/css">
+<script src="public/scripts/trans1.js" type="text/javascript"></script>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
@@ -18,9 +18,9 @@
   <!-- Navigation -->
   <strong>
   <div class="header">
-        <img src="images/GradyEmergencyLogo.png" width="30%" height="30%" right="0" alt=""/>
+        <img src="public/images/GradyEmergencyLogo.png" width="30%" height="30%" right="0" alt=""/>
         <div class="float_right">
-            <button onclick="location.href='are_you_sure.html'" href="#" class="btn Exit" id="Exit">Exit</button>
+            <button onclick="location.href='are_you_sure?last=new_phone_email'" href="#" class="btn Exit" id="Exit">Exit</button>
         </div>
     </div>
   </strong>
@@ -28,19 +28,19 @@
   <!-- Hero Section -->
   <section class="hero" id="hero">
     <div id = "div1">
-      <h2 id="hero_header" class="hero_header">Please enter your phone number and email.</h2>
+      <h2 id="hero_header" class="hero_header">Please enter your phone number and email:</h2>
     <div class = "confirm_method" id = "target">
-      <form id = "phone_check">
+      <form id = "phone_check" action="/new_phone_email" method="POST">
         <div class = "sameline1">
-        <input id="phonenum" type="tel" pattern="^\d{3}-\d{3}-\d{4}$" placeholder="###-###-####" required >
-        <input id="ssn3" type="tel" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$" placeholder="email" required >
+        <input id="phonenum" type="tel" name="phone" value="<%=phone%>" pattern="^\d{3}-\d{3}-\d{4}$" placeholder="###-###-####" required >
+        <input id="ssn3" type="tel" name="email" value="<%=email%>" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$" placeholder="email" required >
         <div class = "sameline2">
         <input type="button" id="button" value="I don't have a phone number"; data-count="1"/>
         <input type="button" id="button" value="I don't have an email"; data-count="1"/></div>
-      </form>
   	</div>
-    <div class="float_right"><button onclick = "location.href = 'new_phone_email_confirm.html'" class="btn next" id ="next" >
+    <div class="float_right"><button type="submit" class="btn next" id ="next" >
       <i class="fa fa-arrow-right" style="font-size:64px"></i></button></div>
+    </form>
   </section>
   <!-- About Section -->
   <!-- Stats Gallery Section -->

@@ -5,10 +5,10 @@
 <!-- <meta http-equiv="X-UA-Compatible" content="IE=edge"> -->
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>VIP</title>
-<link href="css/confirm.css" rel="stylesheet" type="text/css">
+<link href="public/css/confirm.css" rel="stylesheet" type="text/css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <!-- <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet"> -->
-<script type="text/javascript" src="scripts/trans1.js" ></script>
+<script type="text/javascript" src="public/scripts/trans1.js" ></script>
 <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.9/jquery.min.js"></script> -->
 <script src="jquery-3.3.1.min.js"></script>
 <!-- <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script> -->
@@ -20,8 +20,8 @@
 <div class="container">
   <!-- Navigation -->
   <div class="header">
-      <img src="images/GradyEmergencyLogo.png" width="30%" height="30%" right="0" alt=""/>
-      <div class="float_right"><button onclick = "location.href = 'select_language.html'" href="#" class = "btn Exit" id = "Exit">Exit</button></div>
+      <img src="public/images/GradyEmergencyLogo.png" width="30%" height="30%" right="0" alt=""/>
+      <div class="float_right"><button onclick = "location.href = 'select_language'" href="#" class = "btn Exit" id = "Exit">Exit</button></div>
   </div>
   <!-- Hero Section -->
   <section class="hero" id="hero">
@@ -29,30 +29,28 @@
     	<h2 id="hero_header" class="hero_header" >Please enter your emergency contact info</h2>
     </div>
     <div class = "confirm_method" id = "target">
-    	<form id = "name_check">
+    	<form id = "name_check" action="/new_emergency_contact" method="POST">
         <div class = "sameline1"><label for="annotation">Name:</label>
-        <input class="inputs" type="text" placeholder="First" >
-        <input class="inputs" type="text" placeholder="Last" >
+        <input class="inputs" type="text" name="firstname" value="<%=firstname%>" placeholder="First" >
+        <input class="inputs" type="text" name="lastname" value="<%=lastname%>" placeholder="Last" >
         <div class = "sameline1"><label for="annotation">Street Address:</label>
-        <input class="inputs" type="text" placeholder="123 Anon Street" >
+        <input class="inputs" type="text" name="street1" value="<%=street1%>" placeholder="123 Anon Street" >
         <label for="annotation">City:</label>
-        <input class="inputs" type="text" placeholder="Anytown"></div>
+        <input class="inputs" type="text" name="city" value="<%=city%>" placeholder="Anytown"></div>
         <div class = "sameline3"><label for="annotation">State:</label>
-        <input class="inputs" type="text" pattern="[A-Z]{2}$" placeholder="GA">
+        <input class="inputs" type="text" name="state" value="<%=state%>" pattern="[A-Z]{2}$" placeholder="GA">
         <label for="annotation">Zip Code:</label>
-        <input class="inputs" type="text" pattern="^\d{35}" placeholder="45678"></div>
+        <input class="inputs" type="text" name="zip" value="<%=zip%>" pattern="^\d{5}" placeholder="45678"></div>
         <div class = "sameline3"><label for="annotation">Country:</label>
-        <input class="inputs" type="text" placeholder="Country">
+        <input class="inputs" type="text" name="country" value="<%=country%>" placeholder="Country">
         <label for="annotation">Relationship:</label>
-        <input class="inputs" type="text" placeholder="ie Mother">
-
-      </form>
+        <input class="inputs" type="text" name="relationship" value="<%=relationship%>" placeholder="e.g., Mother">
       <!-- <button type = "submit" class="btn next" id = "next"><i class="fa fa-arrow-right"></i></button> -->
 
   </div>
-  <div class="float_right"><button onclick = "location.href = 'confirm_emer_contact.html'" class="btn next" id ="next" >
+  <div class="float_right"><button type="submit" class="btn next" id ="next" >
     <i class="fa fa-arrow-right" style="font-size:64px"></i></button></div>
-
+  </form>
 
 
   </section>
