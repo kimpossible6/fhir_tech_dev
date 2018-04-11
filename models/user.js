@@ -1,12 +1,12 @@
 exports.userSchema = function() {
     user = {
         language: '',
-        birthdate: '',
+        dob: '',
         lastname: '',
         firstname: '',
         middlename: '',
         suffix: '',
-        ssn:'',
+        address:{ street1: '', city:'', state:'', zip:'', country: ''},
         id: '',
         medications: {},
         allergies: {},

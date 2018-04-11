@@ -7,7 +7,7 @@
     <!-- <meta http-equiv="X-UA-Compatible" content="IE=edge"> -->
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <link href="css/confirm.css" rel="stylesheet" type="text/css">
+    <link href="public/css/confirm.css" rel="stylesheet" type="text/css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <!-- <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet"> -->
 
@@ -20,7 +20,7 @@
 <body>
     <!-- Navigation -->
     <div class="header">
-        <img src="images/GradyEmergencyLogo.png" width="30%" height="30%" right="0" alt=""/>
+        <img src="public/images/GradyEmergencyLogo.png" width="30%" height="30%" right="0" alt=""/>
         <div class="float_right">
             <button onclick="location.href='are_you_sure.html'" href="#" class="btn Exit" id="Exit">Exit</button>
         </div>
@@ -29,20 +29,21 @@
     <!-- Hero Section -->
     <section class="hero" id="hero">
         <div id="div1">
-            <h2 id="hero_header" class="hero_header">Please enter your date of birth</h2>
+            <h2 id="hero_header" class="hero_header">Please enter your date of birth:</h2>
         </div>
         <div class="confirm_method" id="target">
-            <form id="date_check">
+            <form id="date_check" action="/new_dob" method="POST" >
                 <!-- <input id="phonenum" type="tel" pattern="^\d{3}-\d{3}-\d{4}$" required placeholder="123-123-1234" > -->
-                <select id="dobmonth" class="1-12"></select>
+                <select id="dobmonth" class="1-12" name="dobmonth"></select>
                 <label for="break">/</label>
-                <select id="dobdate" class="1-31"></select>
+                <select id="dobdate" class="1-31" name="dobdate"></select>
                 <label for="break">/</label>
-                <select id="dobyear" class="1900-2018"></select>
-            </form>
+                <select id="dobyear" class="1900-2018" name="dobyear"></select>
+           
             <div class="float_right">
-                <button onclick="location.href='new_confirm_dob.html'" class="btn next" id ="next" ><i class="fa fa-arrow-right" style="font-size:64px"></i></button>
+                <button type="submit" class="btn next" id ="next" ><i class="fa fa-arrow-right" style="font-size:64px"></i></button>
             </div>
+        </form>
             <!-- <button type="submit" class="btn next" id="next"><i class="fa fa-arrow-right"></i></button> -->
         </div>
     </section>
@@ -55,6 +56,6 @@
     <!-- Copyrights Section -->
     <div class="copyright">&copy; 2018 GT VIP HEALTH INFORMATICS</div>
 
-    <script type="text/javascript" src="scripts/trans1.js" ></script>
+    <script type="text/javascript" src="public/scripts/trans1.js" ></script>
 </body>
 </html>

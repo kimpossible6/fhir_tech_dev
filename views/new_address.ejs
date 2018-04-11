@@ -7,11 +7,11 @@
     
     <title>VIP</title>
     
-    <link href="css/confirm.css" rel="stylesheet" type="text/css">
+    <link href="public/css/confirm.css" rel="stylesheet" type="text/css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <!-- <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet"> -->
     
-    <script type="text/javascript" src="scripts/trans1.js" ></script> 
+    <script type="text/javascript" src="public/scripts/trans1.js" ></script> 
     <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.9/jquery.min.js"></script> -->
     <script src="jquery-3.3.1.min.js"></script>
     <!-- <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script> -->
@@ -21,7 +21,7 @@
 <body>
     <!-- Navigation -->
     <div class="header">
-        <img src="images/GradyEmergencyLogo.png" width="30%" height="30%" right="0" alt=""/>
+        <img src="public/images/GradyEmergencyLogo.png" width="30%" height="30%" right="0" alt=""/>
         <div class="float_right">
             <button onclick="location.href='are_you_sure.html'" href="#" class="btn Exit" id="Exit">Exit</button>
         </div>
@@ -33,29 +33,30 @@
     	   <h2 id="hero_header" class="hero_header">Please enter your address</h2>
         </div>
         <div class="confirm_method" id="target">
-        	<form id="name_check">
+        	<form id="name_check" action="/new_address" method="POST">
                 <!-- <input id="phonenum" type="tel" pattern="^\d{3}-\d{3}-\d{4}$" required placeholder="123-123-1234" > -->
                 <div class="sameline1">
-                    <label for="annotation">Street Address:</label>
-                    <input class="inputs" type="text" placeholder="Street Address" >
+                    <label for="annotation">Street Address (1):</label>
+                    <input class="inputs" type="text" name="street1" placeholder="Street Address" value=" <%- street1 %>" >
                     <label for="annotation">City:</label>
-                    <input class="inputs" type="text" placeholder="City">
+                    <input class="inputs" type="text" name="city" placeholder="City" value="<%- city %>">
                 </div>
                 <div class="sameline3">
                     <label for="annotation">State:</label>
-                    <input class="inputs" type="text" placeholder="State">
+                    <input class="inputs" type="text" name="state" placeholder="State" value="<%- state %>">
                     <label for="annotation">Zip Code:</label>
-                    <input class="inputs" type="text" placeholder="Zip Code">
+                    <input class="inputs" type="text" name="zip" placeholder="Zip Code" value="<%- zip %>">
                 </div>
                 <div class="sameline5">
                     <label for="annotation">Country:</label>
-                    <input class="inputs" type="text" placeholder="Country">
+                    <input class="inputs" type="text" name="country" placeholder="Country" value="<%- country %>">
                     <input type="button" id="button" value="I don't have a permanent address"; data-count="1"/>
                 </div>
-            </form>
+            
             <div class="float_right">
-                <button onclick="location.href='new_confirm_address.html'" class="btn next" id ="next" ><i class="fa fa-arrow-right" style="font-size:64px"></i></button>
+                <button type="submit" class="btn next" id ="next" ><i class="fa fa-arrow-right" style="font-size:64px"></i></button>
             </div>
+            </form>
             <!-- <button type="submit" class="btn next" id="next"><i class="fa fa-arrow-right"></i></button> -->
         </div>
     </section>
@@ -68,6 +69,6 @@
     <!-- Copyrights Section -->
     <div class="copyright">&copy; 2018 GT VIP HEALTH INFORMATICS</div>
 
-    <script type="text/javascript" src="scripts/trans1.js" ></script> 
+    <script type="text/javascript" src="public/scripts/trans1.js" ></script> 
 </body>
 </html>
