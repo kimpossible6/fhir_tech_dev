@@ -115,17 +115,17 @@ text-shadow:   none;*/
   width:  370px;
   font: "Roboto", sans-serif;
   cursor: pointer;
-  color: #000000;
+  color: #fff;
   font-size: 64px;
   font-weight: bold;
-  background: none;
-  border: 3px solid #000000;
+  background: #38ada9;
+  /*border: 3px solid #fff;*/
   transition: all 0.4s linear;
   margin: 40px;
 
 }
 
-.btn:hover{ color: #fff; }
+/*.btn:hover{ color: #fff; }
 
 .btn:before {
   position: absolute;
@@ -152,7 +152,7 @@ text-shadow:   none;*/
 }
 .eng:hover{
   background: #32CD32;
-}
+}*/
 
 
 

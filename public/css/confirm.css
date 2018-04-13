@@ -103,59 +103,30 @@ ul li:hover a {
   width:  300px;
   font: "Roboto", sans-serif;
   cursor: pointer;
-  color: #000000;
+  color: #fff;
   font-size: 64px;
   font-weight: bold;
-  background: none;
-  border: 3px solid #000000;
+  /*border: 3px solid #fff;*/
   transition: all 0.4s linear;
   margin: 40px;
 
 }
 
-.btn:hover{ color: #fff; }
 
-.btn:before {
-  position: absolute;
-  content: "";
-  width: 0;
-  height: 100%;
-  z-index: -1;
-  background: #0082d0;
-  transition: all 0.4s linear;
-}
-
-.btn:after {
-  position: absolute;
-  content: "";
-  width: 0;
-  height: 100%;
-  z-index: -1;
-  background: #0082d0;
-  transition: all 0.4s linear;
-}
-/*.div2:{
-	position: relative;
-	top:0;!important
-    right:0; !important
-    float: right;
-}
-*/
-
-#No:hover{
-  background: #FF0000;
+#No{
+  background: #e55039;
   /*left:0;*/
 }
-#Yes:hover{
-  background: #32CD32;
+#Yes{
+  background: #38ada9;
   /*left:0;*/
 }
-#next:hover{
-  background: #32CD32;
+#next{
+  background: #38ada9;
 }
 
-#Exit:hover{
-  background: #FF0000;
+#Exit{
+  background: #e55039;
   /*left:0;*/
 }
 
@@ -163,11 +134,11 @@ ul li:hover a {
   float: right;
 }
 
-#Phone:hover{
-  background: #32CD32;
+#Phone:{
+  background: #38ada9;
 }
-#DOB:hover{
-  background: #32CD32;
+#DOB:{
+  background: #38ada9;
 }
 
 .light {
