@@ -52,3 +52,6 @@ function myfunction() {
 function getdate() {
     var dob = document.getElementById("myDate").value;
 }
+
+
+
